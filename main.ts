@@ -128,6 +128,7 @@ scene.setBackgroundImage(img`
     `)
 Rosa = sprites.create(assets.image`Rosa`, SpriteKind.Player)
 tiles.setCurrentTilemap(tilemap`level1`)
-controller.moveSprite(Rosa)
+controller.moveSprite(Rosa, 100, 0)
 scene.cameraFollowSprite(Rosa)
 Rosa.ay = 400
+Rosa.setPosition(20, 110)
